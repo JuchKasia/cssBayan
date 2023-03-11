@@ -44,10 +44,6 @@
 
 
 /* MAIN */
-.main-container {
-    /* border: 3px solid black; */
-}
-
 .block-mems {
     display: flex;
     flex-direction: column;
@@ -130,7 +126,7 @@
     /* margin: 0 auto; */
     /* height: 12.25em; */
     height: 21.875em;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     /* width: 150px;
     height: 150px; */
 
