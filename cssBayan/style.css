@@ -1,0 +1,43 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 120em; */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #000;
+    border: 1px solid red;
+
+}
+
+.header,
+.main {
+    max-width: 120em;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    color: #575757;
+    background-color: #f1ededce;
+    /* border: 1px solid blue; */
+}
+
+/* HEADER */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+}
+
