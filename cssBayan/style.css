@@ -214,7 +214,7 @@
 /*MEDIA MAX-WIDTH: 525px*/
 @media (max-width: 32.8em) {
     body {
-        max-width: 332.8em;
+        max-width: 32.8em;
         width: 100%;
         margin: 0 auto;
     }
@@ -234,5 +234,31 @@
     .img-mem {
         height: 9.375em;
         width: 9.375em; 
+    }
+}
+
+/*MEDIA MAX-WIDTH: 320px*/
+@media (max-width: 20em) {
+    body {
+        max-width: 20em;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header-title {
+        font-size: 1em;
+    }
+
+    .subtitle {
+        font-size: 0.75em;
+    }
+
+    .item-bottom {
+        height: 5.6em;
+    }
+
+    .img-mem {
+        height: 5.6em;
+        width: 5.6em; 
     }
 }
