@@ -87,13 +87,14 @@
 }
 
 .subtitle {
-    width: 70%;
+    width: 80%;
+    font-size: 1.4375em;
     /* border: 3px solid red; */
 }
 
 .plus-cross {
     display: flex;
-    width: 30%;
+    width: 20%;
     justify-content: flex-end;
     /* border: 3px solid red; */
 }
@@ -160,9 +161,26 @@
 
 /*MEDIA MAX-WIDTH: 820px*/
 @media (max-width: 51.25em) {
+    body {
+        max-width: 51.25em;
+        width: 100%;
+        margin: 0 auto;
+    }
 
-}
+    .header-title {
+        font-size: 1.75em;
+    }
 
-@media (max-width: 51.25em) {
+    .subtitle {
+        font-size: 1.125em;
+    }
 
+    .item-bottom {
+        height: 15.625em;
+    }
+
+    .img-mem {
+        height: 15.625em;
+        width: 15.625em; 
+    }
 }
