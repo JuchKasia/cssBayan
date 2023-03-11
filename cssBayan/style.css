@@ -184,3 +184,29 @@
         width: 15.625em; 
     }
 }
+
+/*MEDIA MAX-WIDTH: 600px*/
+@media (max-width: 37.5em) {
+    body {
+        max-width: 37.5em;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header-title {
+        font-size: 1.5em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .item-bottom {
+        height: 12.5em;
+    }
+
+    .img-mem {
+        height: 12.5em;
+        width: 12.5em; 
+    }
+}
