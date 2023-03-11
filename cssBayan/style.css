@@ -18,6 +18,7 @@
 .main {
     max-width: 120em;
     width: 100%;
+    margin: 0 auto;
 }
 
 .container {
@@ -50,27 +51,39 @@
 .block-mems {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.5s;
+    /* border: 3px solid red; */
 }
+.block-mems:hover .plus{
+    display: block;
 
+}
 .mems-item {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
-    border: 3px solid violet;
+    width: 100%;
+    /* margin: 0 auto; */
+    /* border: 3px solid violet; */
+}
+
+.item {
+    display: flex;
 }
 
 .item-top {
     display: flex;
     flex-direction: row;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    /* margin: 0 auto; */
     height: 3.75em;
     justify-content: space-between;
     align-items: center;
-    border: 3px solid green;
-
+    cursor: pointer;
+    transition: 0.5s;
+    /* border: 3px solid green; */
 }
 
 .subtitle {
@@ -94,26 +107,26 @@
 
 
 .plus {
+    display: none;
     background-image: url('./assets/svg/plus-solid.svg');
     background-position: center;
     background-repeat: no-repeat;
-    
-
 }
 
-
 .xmark {
+    display: none;
     background-image: url('./assets/svg/xmark-solid.svg');
     background-position: center;
     background-repeat: no-repeat;
-
 }
+
 .item-bottom {
     display: flex;
+    /* display: none; */
     justify-content: center;
     align-items: center;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    /* margin: 0 auto; */
     /* height: 12.25em; */
     height: 21.875em;
     border: 3px solid red;
@@ -123,21 +136,33 @@
 }
 
 .img-mem {
-    /* width: 9.375em; */
-    /* width: 12.25em; */
-    /* height: 12.25em; */
-    width: 350px;
-    height: 350px;
+    /* display: none; */
+    width: 21.875em; 
+    height: 21.875em;
+    /* width: 350px;
+    height: 350px; */
     margin: 0 auto;
 }
 
 
-/* 
-.plus {
-    /* ./assets/svg/plus-solid.svg */
+.item-top:hover .item-bottom .img-mem{
+    display: flex;
 
-/* } */
+}
+.item-top:hover .plus{
+    display: none;
+}
 
-/* .xmark { */
-    /* ./assets/svg/xmark-solid.svg */
-/* } */
+.item-top:hover .xmark{
+    display: block;
+}
+
+
+/*MEDIA MAX-WIDTH: 820px*/
+@media (max-width: 51.25em) {
+
+}
+
+@media (max-width: 51.25em) {
+
+}
