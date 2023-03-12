@@ -1,7 +1,6 @@
 .body {
     display: flex;
     flex-direction: column;
-    /* max-width: 120em; */
     width: 100%;
     margin: 0 auto;
     padding: 0;
@@ -10,7 +9,7 @@
     align-items: center;
     background-color: #FFFFFF;
     color: #000;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .header,
@@ -50,47 +49,64 @@
     margin: 0 auto;
     padding-bottom: 1.25em;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.8s;
     /* border: 3px solid red; */
 }
+
 .block-mems:hover .plus{
     display: block;
-
+    transition: 0.8s;
 }
+
+/* @keyframes new-img {
+    from {
+        transform: scale(.8);
+        transition: 0.8s;
+    }
+    to {
+        transform: scale(1);
+        transition: 0.8s;
+    }
+} */
+
+.block-mems input:checked ~ .img-mem {
+    display: block;
+    /* animation-name: new-img; */
+}
+
+
 .mems-item {
     display: flex;
-    flex-direction: row;
-    width: 90%;
+    flex-direction: column;
+    width: 100%;
     margin: 0 auto;
-    /* border: 1px solid violet; */
 }
 
 .item-top {
     display: flex;
-    flex-direction: column;
-    width: 90%;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.8s;
     /* border: 1px solid blue; */
 }
 
-.item-bottom {
-    width: 10%;
-    cursor: pointer;
-    transition: 0.5s;
-}
 .subtitle {
-    width: 80%;
+    width: 100%;
     font-size: 1.4375em;
+    font-weight: 700;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.8s;
     /* border: 3px solid red; */
 }
-.plus-cross {
-    display: flex;
-    /* width: 20%; */
-    /* width: 1.8em; */
-    height: 1.8em;
-    justify-content: flex-end;
-    border: 3px solid red;
+
+input {
+    width: 100%;
+    opacity: 0;
+    /* border: 3px solid red; */
 }
 
 .plus-cross {
@@ -104,8 +120,6 @@
 .xmark {
     width: 1.8em;
     height: 1.8em;
-    /* border-style: none;
-    border: transparent; */
 }
 
 .plus {
@@ -126,15 +140,27 @@
     display: none;
     width: 21.875em; 
     height: 21.875em;
-    /* width: 350px;
-    height: 350px; */
     margin: 0 auto;
 }
 
+
+/* @keyframes post-img {
+    from {
+        transform: scale(.8);
+        transition: 0.8s;
+    }
+    to {
+        transform: scale(1);
+        transition: 0.8s;
+    }
+} */
+
+
 .mems-item:hover .img-mem{
     display: flex;
-
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
 }
+
 .mems-item:hover .plus{
     display: none;
 }
@@ -142,7 +168,6 @@
 .mems-item:hover .xmark{
     display: block;
 }
-
 
 /*MEDIA MAX-WIDTH: 820px*/
 @media (max-width: 51.25em) {
