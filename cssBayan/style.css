@@ -58,20 +58,20 @@
     transition: 0.8s;
 }
 
-/* @keyframes new-img {
+@keyframes new-img {
     from {
-        transform: scale(.8);
-        transition: 0.8s;
+        /* transform: scale(.8);
+        transition: 0.8s; */
     }
     to {
         transform: scale(1);
-        transition: 0.8s;
+        /* transition: 0.8s; */
     }
-} */
+}
 
 .block-mems input:checked ~ .img-mem {
     display: block;
-    /* animation-name: new-img; */
+    animation-name: new-img;
 }
 
 
@@ -141,8 +141,9 @@ input {
     width: 21.875em; 
     height: 21.875em;
     margin: 0 auto;
+    transform: scale(.8);
+    /* cursor: grab; */
 }
-
 
 /* @keyframes post-img {
     from {
@@ -155,18 +156,22 @@ input {
     }
 } */
 
-
 .mems-item:hover .img-mem{
     display: flex;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    animation: new-img 0.6s;
+    cursor: grab;
+    transition: 0.8s;
 }
 
 .mems-item:hover .plus{
     display: none;
+    transition: 0.8s;
 }
 
 .mems-item:hover .xmark{
     display: block;
+    transition: 0.8s;
 }
 
 /*MEDIA MAX-WIDTH: 820px*/
