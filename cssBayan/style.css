@@ -1,0 +1,279 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #000;
+    /* border: 1px solid red; */
+}
+
+.header,
+.main {
+    max-width: 120em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    color: #575757;
+    background-color: #f1ededce;
+    /* border: 1px solid blue; */
+}
+
+/* HEADER */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+
+/* MAIN */
+.block-mems {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 1.25em;
+    cursor: pointer;
+    transition: 0.8s;
+    /* border: 3px solid red; */
+}
+
+.block-mems:hover .plus{
+    display: block;
+    transition: 0.8s;
+}
+
+@keyframes new-img {
+    from {
+        /* transform: scale(.8);
+        transition: 0.8s; */
+    }
+    to {
+        transform: scale(1);
+        /* transition: 0.8s; */
+    }
+}
+
+.block-mems input:checked ~ .img-mem {
+    display: block;
+    animation-name: new-img;
+}
+
+
+.mems-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.item-top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    /* border: 1px solid blue; */
+}
+
+.subtitle {
+    width: 100%;
+    font-size: 1.4375em;
+    font-weight: 700;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.8s;
+    /* border: 3px solid red; */
+}
+
+input {
+    width: 100%;
+    opacity: 0;
+    /* border: 3px solid red; */
+}
+
+.plus-cross {
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+    /* border: 3px solid red; */
+ }
+
+.plus,
+.xmark {
+    width: 1.8em;
+    height: 1.8em;
+}
+
+.plus {
+    display: none;
+    background-image: url('./assets/svg/plus-solid.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.xmark {
+    display: none;
+    background-image: url('./assets/svg/xmark-solid.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-mem {
+    display: none;
+    width: 21.875em; 
+    height: 21.875em;
+    margin: 0 auto;
+    transform: scale(.8);
+    /* cursor: grab; */
+}
+
+/* @keyframes post-img {
+    from {
+        transform: scale(.8);
+        transition: 0.8s;
+    }
+    to {
+        transform: scale(1);
+        transition: 0.8s;
+    }
+} */
+
+.mems-item:hover .img-mem{
+    display: flex;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    animation: new-img 0.6s;
+    cursor: grab;
+    transition: 0.8s;
+}
+
+.mems-item:hover .plus{
+    display: none;
+    transition: 0.8s;
+}
+
+.mems-item:hover .xmark{
+    display: block;
+    transition: 0.8s;
+}
+
+/*MEDIA MAX-WIDTH: 820px*/
+@media (max-width: 51.25em) {
+    body {
+        max-width: 51.25em;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header-title {
+        font-size: 1.75em;
+    }
+
+    .subtitle {
+        font-size: 1.125em;
+    }
+
+    .item-bottom {
+        height: 15.625em;
+    }
+
+    .img-mem {
+        height: 15.625em;
+        width: 15.625em; 
+    }
+}
+
+/*MEDIA MAX-WIDTH: 600px*/
+@media (max-width: 37.5em) {
+    body {
+        max-width: 37.5em;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header-title {
+        font-size: 1.5em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .item-bottom {
+        height: 12.5em;
+    }
+
+    .img-mem {
+        height: 12.5em;
+        width: 12.5em; 
+    }
+}
+
+/*MEDIA MAX-WIDTH: 525px*/
+@media (max-width: 32.8em) {
+    body {
+        max-width: 32.8em;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header-title {
+        font-size: 1.25em;
+    }
+
+    .subtitle {
+        font-size: 0.875em;
+    }
+
+    .item-bottom {
+        height: 9.375em;
+    }
+
+    .img-mem {
+        height: 9.375em;
+        width: 9.375em; 
+    }
+}
+
+/*MEDIA MAX-WIDTH: 320px*/
+@media (max-width: 20em) {
+    body {
+        max-width: 20em;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header-title {
+        font-size: 1em;
+    }
+
+    .subtitle {
+        font-size: 0.75em;
+    }
+
+    .item-bottom {
+        height: 5.6em;
+    }
+
+    .img-mem {
+        height: 5.6em;
+        width: 5.6em; 
+    }
+}
